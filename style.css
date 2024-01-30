@@ -1,0 +1,8 @@
+body {
+    background-image: url("vamp.png");
+    background-size: cover;
+}
+   
+#imagecontainer{
+    background-size: cover;
+}
