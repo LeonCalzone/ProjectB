@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+  <!-- Center Column -->
+  <div class="center">
+    <!-- Responsive Image Map -->
+    <div style="position: relative;">
+        <img src="vamp.png" usemap="#image_map">
+
+      <!-- Image Map -->
+      <map name="image-map">
+        <!-- Define areas and their respective tooltips -->
+        <area alt="Heart?" title="Heart?" href="https://en.wikipedia.org/wiki/Heart" coords="914,762,961,809" shape="rect">
+        <area alt="squiggle" title="squiggle" href="https://sites.evergreen.edu/politicalshakespeares/wp-content/uploads/sites/226/2015/12/Stryker-My-Words-to-VF.pdf" coords="983,767,1031,845" shape="rect">
+        <area alt="lump" title="lump" href="https://www.youtube.com/watch?v=j0fucPpR1K0&list=PLFHfsimBl6edxOhk6E3--u6s-ku00u3Z_&index=10" coords="1141,756,1163,818" shape="rect">
+        <area alt="red part" title="red part" href="https://www.youtube.com/watch?v=ohco3PB6eBw&list=PLFHfsimBl6edxOhk6E3--u6s-ku00u3Z_&index=18" coords="1089,731,1138,845" shape="rect">
+      </map>
+
+      <!-- Tooltip Container -->
+      <div class="tooltip" id="tooltip"></div>
+    </div>
+  </div>
+
+  <!-- Right Column -->
+  <div class="right">
+    <!-- Content for the right column -->
+    <!-- Add your content here -->
+  </div>
+
+  <!-- Left Column -->
+  <div class="left">
+    <!-- Content for the left column -->
+    <!-- Add your content here -->
+  </div>
+
+  <script>
+    // Add event listener to each area
+    document.querySelectorAll('area').forEach(function (area) {
+      area.addEventListener('mouseover', function () {
+        // Display the tooltip when mouse is over the area
+        var tooltip = document.getElementById('tooltip');
+        tooltip.innerHTML = this.getAttribute('data-tooltip');
+        tooltip.style.display = 'block';
+      });
+
+      area.addEventListener('mouseout', function () {
+        // Hide the tooltip when mouse is out of the area
+        var tooltip = document.getElementById('tooltip');
+        tooltip.style.display = 'none';
+      });
+    });
+  </script>
+
+</body>
+</html>

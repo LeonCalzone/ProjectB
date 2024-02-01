@@ -1,8 +1,22 @@
 body {
     background-image: url("vamp.png");
     background-size: cover;
+    margin-bottom:0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+}
+
+.grid-item {
+    grid-column: span 7; /* 60% of the grid */
+    background-color: #ccc;
 }
    
 #imagecontainer{
     background-size: cover;
+    width: auto;
+    height: 100vh;
 }
