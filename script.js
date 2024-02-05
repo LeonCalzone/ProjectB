@@ -41,7 +41,6 @@ function startDragging(e, boxId) {
         box.style.top = e.clientY - offsetY + 'px';
     }
 
-
     function handleMouseUp() {
         document.removeEventListener('mousemove', handleMouseMove);
         document.removeEventListener('mouseup', handleMouseUp);
@@ -51,36 +50,10 @@ function startDragging(e, boxId) {
     document.addEventListener('mouseup', handleMouseUp);
 }
 
-//
-function startResizing(event, boxId) {
-    event.preventDefault();
-
-    const box = document.getElementById(boxId);
-    const originalWidth = box.clientWidth;
-    const aspectRatio = 1247/711; // Set your desired aspect ratio (width/height)
-
-    function resize(event) {
-        const newWidth = originalWidth + event.clientX - event.pageX;
-
-        // Set minimum values for width
-        const minWidth = originalWidth;
-
-        // Apply constraints
-        const constrainedWidth = Math.max(minWidth, newWidth);
-
-        // Calculate height based on the aspect ratio
-        const constrainedHeight = constrainedWidth / aspectRatio;
-
-        // Update dimensions
-        box.style.width = constrainedWidth + 'px';
-        box.style.height = constrainedHeight + 'px';
-    }
-
-    function stopResizing() {
-        document.removeEventListener('mousemove', resize);
-        document.removeEventListener('mouseup', stopResizing);
-    }
-
-    document.addEventListener('mousemove', resize);
-    document.addEventListener('mouseup', stopResizing);
-}//
+function updateContent(imageSrc, textContent) {
+    // Update the image source
+    document.getElementById('displayedImage').src = imageSrc;
+  
+    // Update the text content
+    document.getElementById('displayedText').textContent = textContent;
+  }
