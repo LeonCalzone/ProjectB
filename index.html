@@ -3,20 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Dissecare</title>
+    <title>DISS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="grid.item"</div>
-    <div id = imagecontainer>
-    <img src="vamp.png" usemap="#image_map">
-    <map name="image_map">
-      <area alt="Heart?" title="Heart?" href="https://en.wikipedia.org/wiki/Heart" coords="914,762,961,809" shape="rect">
-      <area alt="squiggle" title="squiggle" href="https://sites.evergreen.edu/politicalshakespeares/wp-content/uploads/sites/226/2015/12/Stryker-My-Words-to-VF.pdf" coords="983,767,1031,845" shape="rect">
-      <area alt="lump" title="lump" href="https://www.youtube.com/watch?v=j0fucPpR1K0&list=PLFHfsimBl6edxOhk6E3--u6s-ku00u3Z_&index=10" coords="1141,756,1163,818" shape="rect">
-      <area alt="red part" title="red part" href="https://www.youtube.com/watch?v=ohco3PB6eBw&list=PLFHfsimBl6edxOhk6E3--u6s-ku00u3Z_&index=18" coords="1089,731,1138,845" shape="rect">
-    </div>
+
+    <span class="open-button box5-open" onclick="toggleBox('box5', true)">
+        <img src="images/foldericon.png" alt="Open Box 5">
+     </span>
+     
+     <div class="resizable-box" id="box5">
+        <div class="resizable-box-header" onmousedown="startDragging(event, 'box5')">Drag me</div>
+        <span class="close-button" onclick="toggleBox('box5', false)">✖</span>
+        <div class="image-map-container">
+            <div class="image-container">
+                <img src="images/chest.png" alt="Box 5 Image">
+            </div>
+            <map name="box5-map">
+      <area alt="guts" title="guts" href="https://www.google.com/?&bih=970&biw=1680&client=safari&hl=en" coords="441,605 368,672 370,720 381,722 407,712 425,727 430,736 487,738 563,780 581,785 616,762 624,734 672,710 633,704 625,677 643,624 671,600 637,591 628,572 626,509 607,491 587,452 599,436 607,431 609,446 608,460 619,471 626,471 642,451 670,445 686,415 696,380 726,366 726,376 705,384 697,439 686,456 666,464 645,463 640,484 647,499 646,556 658,576 680,576 682,539 682,514 690,509 703,524 707,568 696,627 663,649 646,683 691,685 732,692 739,729 720,769 690,783 692,801 685,829 672,855 672,870 670,916 643,957 555,1045 455,949 367,821 341,761 355,748 386,743 351,731 344,692 362,641 353,571 351,556 365,564 376,582 381,630 413,597 448,574 460,571 506,533 501,551 552,525 601,526 587,533 522,555 491,567 455,597 441,605 441,604 423,463 " shape="polygon">
+      <area alt="crystal" title="crystal" href="link2" coords="629,654 615,664 596,658 584,665 570,693 570,669 555,708 567,729 570,761 587,775 607,766 631,722 669,705 628,696 623,674 629,656 583,705 " shape="polygon">
+      <area alt="cradle" title="cradle" href="link3" coords="472,581 493,604 519,618 559,617 591,601 612,601 623,600 623,591 632,580 629,525 612,510 590,513 586,500 566,498 550,487 536,477 533,463 526,462 516,466 510,466 510,461 499,444 462,453 457,485 468,474 474,453 502,456 481,465 481,485 457,510 462,559 496,535 510,522 513,526 504,543 552,519 600,521 584,531 551,527 529,542 495,558 471,580 525,573 " shape="polygon">
+      <area alt="pearl" title="pearl" href="link4" coords="374,571 393,555 401,562 421,550 421,541 448,526 464,526 463,565 433,583 406,602 381,628 375,572 418,570 " shape="polygon">
+      <area alt="lights" title="lights" href="link5" coords="389,650 374,696 369,719 378,719 405,707 428,729 491,737 554,770 570,761 568,730 553,711 568,695 573,678 570,663 552,645 520,640 518,647 514,656 490,639 476,626 453,624 438,635 411,635 388,649 463,673 " shape="polygon">
+      <area alt="" title="" href="" coords="462,445,4" shape="circle">
     </map>
+</map>
+            </map>
+        </div>
+     </div>
+
+      <span class="open-button box1-open" onclick="toggleBox('box1', true)">
+        <img src="images/picicon.png" alt="Open photos">
+    </span>
+    
+    <span class="open-button box2-open" onclick="toggleBox('box2', true)">
+        <img src="images/compicon.png" alt="Open documents">
+    </span>
+    
+    <div class="resizable-box" id="box1">
+        <div class="resizable-box-header" onmousedown="startDragging(event, 'box1')">Drag me</div>
+        <span class="close-button" onclick="toggleBox('box1', false)">✖</span>
+        <p>Resizable Box 1</p>
+    </div>
+    
+    <div class="resizable-box" id="box2">
+        <div class="resizable-box-header" onmousedown="startDragging(event, 'box2')">Drag me</div>
+        <span class="close-button" onclick="toggleBox('box2', false)">✖</span>
+        <p>Resizable Box 2</p>
+    </div>
+
+    <div class="fixed-box" id="box3">
+        <div class="fixed-box-header" onmousedown="startDragging(event, 'box3')">Drag me</div>
+        <img src="images/fullbody.png" alt="Box 3">
+    </div>
+
+    <div class="fixed-box" id="box4">
+        <div class="fixed-box-header" onmousedown="startDragging(event, 'box4')">Drag me</div>
+        <img src="images/headshot.jpg" alt="Box 4">
+    </div>
+
+
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 </body>
 </html>
-```
