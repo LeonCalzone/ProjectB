@@ -11,61 +11,127 @@
 </head>
 <body>
 
-    <span class="open-button box5-open" onclick="toggleBox('box5', true)">
-        <img src="images/foldericon.png" alt="Open Box 5">
-     </span>
-     <div class="fixed-box" id="box5">
-        <span class="close-button" onclick="toggleBox('box5A', false)">✖</span>
-        <div class="fixed-box-header" onmousedown="startDragging(event, 'box5')">Drag me</div>
-                        <map name="box5-map">
-                            <img src="images/chestmed.png" usemap="#image_map">
-                            <map name="image_map">
-                              <area alt="crystal" title="crystal" onclick="updateContent( 'images/crystal.png', 'Text for Area 1')" coords="312,329 298,329 286,336 286,346 279,355 279,359 285,366 284,373 280,383 292,389 305,383 318,360 324,353 310,347 311,330 299,361 " shape="polygon">
-                              <area alt="cradle" title="cradle" onclick="updateContent('images/cradle.png', 'VDVBQBBSHBQHDBHJSBDHJBSHQJBHDJBQS')" coords="233,243 238,240 239,231 242,237 232,254 234,280 234,281 255,264 258,264 253,271 276,261 302,262 295,266 278,266 239,290 264,311 283,309 303,300 309,299 317,292 313,282 316,263 300,256 296,256 294,253 276,245 269,239 269,235 262,235 259,237 255,225 250,225 247,220 234,228 232,243 251,253 " shape="polygon">
-                              <area alt="pearl" title="pearl" href="link3" coords="188,287 197,280 201,283 207,275 212,272 216,272 221,266 228,268 228,283 190,310 188,287 " shape="polygon">
-                              <area alt="lights" title="lights" href="link4" coords="193,325 184,356 186,358 206,353 217,363 242,366 278,384 284,370 279,356 281,347 283,346 282,331 268,322 230,313 212,321 192,325 209,349 " shape="polygon">
-                              <area alt="guts" title="guts" href="link5" coords="385,347 327,342 306,384 241,368 207,366 172,374 198,427 235,458 276,518 324,472 337,430 350,413 362,376 385,347 269,413 " shape="polygon">
-                            </map>
-                            
-                    </div>
-                 </div>
-
+    <span class="open-button notebox-open" onclick="toggleBox('notebox', true)">
+        <img src="images/noteicon.png" alt="Open notebox">
+        </span>
                  <a href="index2.html">
                     <img src="images/trashicon.png" alt="Button Image">
                 </a>
 
-      <span class="open-button box1-open" onclick="toggleBox('box1', true)">
-        <img src="images/picicon.png" alt="Open photos">
-    </span>
+                <span class="open-button box-open" onclick="toggleBoxes(['box3', 'box4', 'box5'], true)">
+                    <img src="images/picicon.png" alt="Open photos">
+                </span>
+                
     
-    <span class="open-button box2-open" onclick="toggleBox('box2', true)">
-        <img src="images/compicon.png" alt="Open documents">
-    </span>
-    
-    <div class="resizable-box" id="box1">
-        <div class="resizable-box-header" onmousedown="startDragging(event, 'box1')">Drag me</div>
-        <span class="close-button" onclick="toggleBox('box1', false)">✖</span>
-        <p>Organ pics here(already made)</p>
-        <img id="displayedImage" src="" alt="Displayed Image">
-    </div>
-    
-    <div class="resizable-box" id="box2">
-        <div class="resizable-box-header" onmousedown="startDragging(event, 'box2')">Drag me</div>
-        <span class="close-button" onclick="toggleBox('box2', false)">✖</span>
-        <p>Organ descriptions here (already written)</p>
-        <p id="displayedText"></p>
-    </div>
+                <span class="open-button casefile-open" onclick="toggleBox('casefile', true)">
+                    <img src="images/foldericon.png" alt="Open documents">
+                </span>
 
-    <div class="fixed-box" id="box3">
+    <div class="resizable-box" id="casefile" onmousedown="startDragging(event, 'casefile')">
+        <span class="close-button" onclick="toggleBox('casefile', false)">✖</span>
+        <div class="resizable-box-header">CASE FILE</div>
+        <div class="box-content">
+        <p> test
+            Case ID – [REDACTED] Location – [REDACTED], USA
+            <br>
+                    <br>
+                    <p>January 6, 1997. 21:06. Local police department responded to a call placed by a long-time resident of the area regarding a body washed up on the town beach. First responders to the scene were quick to realize that the remains were not at all those of a person nor that of any animal. Custody of the body was subsequently transferred to the Armed Forces Medical Examiners Unit.
+                <p>Statement recovered from Officer Harker, first responder, re: the creature:
+                [“At first, I thought it was a man lying there. I– We all did. Then, we saw the wings. Big, leathery, like a bat. And the body, it was huge. It’s got to be, what? Seven, eight feet? What is that thing?”]
+            
+                <p>Necropsy Report
+                    <br>January 8, 1997. 08:24. Armed Forces Crypto-Biomedical Specialist Dr. [REDACTED] conducting the necropsy on specimen number [REDCATED].
+                    <br>
+                    <br>
+            <p>External Examination
+                <br>The creature measures from head to foot exactly eight feet and two inches. The skin is pallid, with some of the sunkenness and discoloration characteristic of the early stages of decay. Two clean, even scars are apparent on the chest, calling to mind the recovered state of a bilateral mastectomy. No other wounds, bruises, or scars are visible. The eyes are a deep brown in their entirety, with no visible sclera and small pinprick pupils. The hair is long and black, reaching its wavy fingers down to the midback, and glistening with a shine like an oil spill. The face and body are remarkably human, discounting the large wings taking the place of typical humanoid arms and hands. The wingspan is sixteen feet and six inches tip to tip measured across the body when fully outstretched. Arm structure is present with the wings adjoining. There is some proto-hand formation, including a thumb on each “hand”, but the four other fingers stretch into the wing, like those of bats, to mark the perimeter of each leathery section. In fact, much of the physique is batlike– from the broad shoulders and well-muscled chest to the more slender waist, hips, and legs. It is assumed that this creature spent a great deal of its time airborne, given its musculature. 
+                <br>
+                    <br>
+            <p>Internal Examination
+                <br>Upon examination of the creature’s mouth, it was primarily noted that the enamel of the teeth is colored a deep red, much like the Soricinae and Myosoricinae subfamilies of the shrew. The incisors are of humanoid appearance, but due to the dehydrated nature of dead flesh, the gum line indicates that there may be additional teeth hidden above these exposed incisors that are markedly longer in size and sharper in shape. Next to the incisors in both the top and bottom jaw reside two large fang-like cuspids, for a total amount of four. The remaining teeth, of which there are twelve in number, are wide tri-pointed molars of incredible sharpness. The next thing of particular note was the creature’s strange tongue. The length of this apparatus, unable to fit flatly in the oral cavity, folds onto itself to be stored neatly in the back of the mouth. In texture, it is found to be of semi-firm tissue with small ridges on both sides and appears to consist of spongy erectile tissue. It is unknown why the creature possesses such an organ, vaguely similar to the proboscis of certain insects, when one considers the nature of the teeth. Further dissection is needed.
+                <p>A gaping, Y-shaped incision was now cut into the creature’s torso to expose its strange inner viscera. 
+                <p>Examination of the thoracic cavity revealed an organ with the evident function of cradling within itself some deeper, hidden thing. In appearance it consists of a soft, wide stretch of muscular tissue curled deliberately around its main structure, which is itself lined with some kind of papillae. These odd filaments, reminiscent of sea anemones, are of a purple-blue color. Study of this organ proved difficult, as any attempt to uncouple it from that which it protects caused the flesh to involuntarily seize. The filaments, previously soft when at rest, now tensed in a frantic measure to shield its inner contents. Despite the early stages of decay clearly apparent, this organ is still active. Still warm.
+                <p>Tangled in the lower abdominal cavity is a long, amorphous organ of fatty tendrils and marbled yellowish hue. Its many armlike structures reach out far beyond the understood central body of the organ and into other areas of the abdomen. These tendrils vary in their length and thickness, some like wide branches and others with a fine threadlike quality. It folds and twists around on both itself and nearby structures in such a way that makes it impossible to remove from the cadaver. Unfortunately, closer study of the organ is impossible. It is remarkably fragile, as any touch causes pieces of this intricate system to detach from its main branch. So far, there is no explanation for this phenomenon to occur.
+                <p> Found in the far back of the creature’s central abdomen is an ovular organ comprised of many small pockets compacted tightly together, with a loose similarity in shape to the alveoli of the human lung. However, it was discovered that this organ contains small orange bioluminescent lights. Though dim, they flash in a steady pattern visible to observers through the translucent outer layer of the structure. Geometric and calculated, these tiny lights dance together within the pocketed organ in the depths of the creature. This process occurs only in total darkness. When exposed to light, these pulsing flashes cease to play.
+                <p>[REDACTED]
+                <p>The initial external examination of the creature showed no outward signs of cuts or entry wounds, except the surgical yet superficial scars on the chest. In spite of this, two foreign bodies were recovered from the thoracic cavity during the internal section of the necropsy. These two artifacts seemingly serve no purpose and do not affect the surrounding muscles and organs. The first that was found is an irregularly shaped pearlescent orb made up of many smaller circular parts that have been somehow fused together. The second has an intricate crystalline pattern, of a similar shape to the first, and is bluish in color. Both are understood to consist of biological material. Even stranger, both were discovered wrapped in flesh similar to the creature’s own abdominal tendril structure. In that organ, any touch from the medical examiner caused sections of it to detach from itself. The wrappings of the foreign bodies appear to be the fallen-off pieces of this organ that have been thinly stretched out to create a covering. It is assumed that these wrappings originate from another creature of this same species. With no clear way of having entered the cadaver’s chest and no clear function within the body, further study is needed in order to draw any conclusions. 
+             <p>[REDACTED]
+                <br>
+                <br>
+            <p>Conclusion
+                <br> Despite the many similarities this creature shares with several of the known species of the Earth, mankind included, DNA analysis revealed that it exists separately from all other types of life (at the time of this writing). Furthermore, examiners cannot ascertain a cause of death. The creature is dead, must be dead– but the reasoning for this state continues to be unknown. The investigation will remain ongoing as [REDACTED] searches for any trace of other members of this creature’s race. It is recommended that the specimen be embalmed and retained onsite for future study.
+            <p>END OF REPORT
+            </p>
+        </div>
+    </div>
+    
+     <div class="resizable-box" id="notebox" onmousedown="startDragging(event, 'notebox')">
+        <span class="close-button" onclick="toggleBox('notebox', false)">✖</span>
+        <div class="resizable-box-header">NOTES</div>
+        <div class="box-content">
+        <p> test 2 
+            <!--Jonathan Harker’s Virtual Journal
+            <br>
+            <br>
+            <p>Entry One
+                <br>People need to know about this. I can’t stop until I get the word out. This monster, this man, what secrets did he hold? I just got my hands on a copy of the necropsy report and I can’t get him out of my head. Now– to go to the news? Will they even believe me? God, I barely believe me. Why would the press believe me, when I scarcely do? There has to be something more to do.
+            <br> –Jon
+            <br>1/21/97 05:49 PM
+            <br>
+            <br>
+            <p>Entry Two
+                <br> I dreamt of him last night. He reached out to me, wing and arm and hand outstretched ever so pleadingly. I can bring him justice. What am I talking about? I’ve been staring at those pictures for too long. The colors, the shapes, the wild design of his innards. It’s beautiful. Enchanting. Time to get to work.
+            <p>–Jon
+                <br>1/23/97 07:35 AM
+            <br>
+            <br>
+            <p>Entry Three
+            <br> Like Icarus, he lies upon the beach,
+            <br> that night so brisk shrouded in mystery.
+            <br>Dark angel cast from heaven crumpled there–
+            <br>reaches his clawed hand outstretched to me.
+            <br>The grains of sand cling to mist-dampened flesh.
+            <br>His over-tired muscles quiver in
+            <br>the agony of lifting heavy wing.
+            <br> It falls back on the sand; his movement stills,
+            <br>  as black eyes shut to night forevermore. 
+            <p>1/23/97 11:48 PM
+            <br>
+            <br>
+            <p> Entry Four
+                <br>I can’t stop myself from reliving the night we found him there on the beach. I even see it behind my eyelids. We had no idea what we found until it was too late. I can’t believe I let them take him so easily. But! Getting this information out will fix all of that. I have a meeting set up with this guy who allegedly knows more about all of this. He might be able to help me. Hopefully, this won’t end with another cease and desist.
+            <p>–Jon
+            <br> 1/26/97 02:12 PM
+            <br>
+            <br>
+            <p>Entry Five
+                <br>Where does monster begin and man end? Is that documented in their scientific papers? What is it that makes me so different from him? What sets us apart, when all is but flesh and bone and meat? There is no biopsy that can diagnose a soul. No DNA analysis can uncover the secrets we bury so deeply within our beings. They may try to classify and medicalize him, but they can never hope to truly understand him. 
+                <p> –Jon
+                <br>1/31/97 09:06 PM
+                <br>
+                <br>
+                <p>END OF ENTRIES -->
+            
+        </p>
+        </div> 
+
+    <div class="fixed-box" id="box3" onmousedown="startDragging(event, 'box3')">
         <span class="close-button" onclick="toggleBox('box3', false)">✖</span>
-        <div class="fixed-box-header" onmousedown="startDragging(event, 'box3')">Drag me</div>
+        <div class="fixed-box-header">Drag me</div>
         <img src="images/fullbody.png" alt="Box 3">
     </div>
-
-    <div class="fixed-box" id="box4">
+    
+    <div class="fixed-box" id="box4" onmousedown="startDragging(event, 'box4')">
         <span class="close-button" onclick="toggleBox('box4', false)">✖</span>
-        <div class="fixed-box-header" onmousedown="startDragging(event, 'box4')">Drag me</div>
+        <div class="fixed-box-header">Drag me</div>
         <img src="images/headshot.jpg" alt="Box 4">
     </div>
+
+    <div class="fixed-box" id="box5" onmousedown="startDragging(event, 'box5')">
+        <span class="close-button" onclick="toggleBox('box5', false)">✖</span>
+        <div class="fixed-box-header">Drag me</div>
+        <img src="images/hand.jpg" alt="Box 5">
+    </div>
+ 
 </body>
 </html>
