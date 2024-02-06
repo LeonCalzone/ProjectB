@@ -15,6 +15,7 @@
         <img src="images/foldericon.png" alt="Open Box 5">
      </span>
      <div class="fixed-box" id="box5">
+        <span class="close-button" onclick="toggleBox('box5A', false)">✖</span>
         <div class="fixed-box-header" onmousedown="startDragging(event, 'box5')">Drag me</div>
                         <map name="box5-map">
                             <img src="images/chestmed.png" usemap="#image_map">
@@ -28,6 +29,10 @@
                             
                     </div>
                  </div>
+
+                 <a href="index2.html">
+                    <img src="images/trashicon.png" alt="Button Image">
+                </a>
 
       <span class="open-button box1-open" onclick="toggleBox('box1', true)">
         <img src="images/picicon.png" alt="Open photos">
@@ -52,11 +57,13 @@
     </div>
 
     <div class="fixed-box" id="box3">
+        <span class="close-button" onclick="toggleBox('box3', false)">✖</span>
         <div class="fixed-box-header" onmousedown="startDragging(event, 'box3')">Drag me</div>
         <img src="images/fullbody.png" alt="Box 3">
     </div>
 
     <div class="fixed-box" id="box4">
+        <span class="close-button" onclick="toggleBox('box4', false)">✖</span>
         <div class="fixed-box-header" onmousedown="startDragging(event, 'box4')">Drag me</div>
         <img src="images/headshot.jpg" alt="Box 4">
     </div>
