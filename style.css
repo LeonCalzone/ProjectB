@@ -6,7 +6,7 @@ background-image: url("images/desktop.png");
     height: 100vh;
 }
 
-.box-open {
+.box1-open {
     position: absolute;
     top: 20px;
     left: 1565px;
@@ -15,7 +15,7 @@ background-image: url("images/desktop.png");
     height: auto;
 }
 
-.box-open img {
+.box1-open img {
     width: 100%;
     height: 100%;
 }
@@ -24,15 +24,7 @@ background-image: url("images/desktop.png");
     width: 80px;
   }
 
-  .resizable-box {
-    position: absolute;
-    border: 2px solid #000;
-    padding: 10px;
-    background-color: #fff;
-    overflow: auto; /* Set overflow property to handle text overflow */
-}
-
-.casefile-open {
+.box2-open {
     position: absolute;
     top: 150px;
     left: 1565px;
@@ -41,30 +33,9 @@ background-image: url("images/desktop.png");
     height: auto;
 }
 
-.casefile-open img {
+.box2-open img {
     width: 100%;
     height: 100%;
-}
-
-.notebox-open {
-    position: absolute;
-    top: 280px;
-    left: 1565px;
-    cursor: pointer;
-    width: 80px;
-    height: auto;
-}
-
-.notebox-open img {
-    width: 100%;
-    height: 100%;
-}
-
-.close-button {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    cursor: pointer;
 }
 
 .resizable-box#box1 {
@@ -76,29 +47,28 @@ background-image: url("images/desktop.png");
     height:200px;
     width: auto;
     background-color: #fff;
-    display: none;
 }
 
-.resizable-box#casefile {
-    top: 200px;
-    left: 400px;
-    width: 500px;
-    height: 600px;
-    display: none;
-}
-
-.resizable-box#notebox {
-    top: 200px;
-    left: 400px;
-    width: 500px;
-    height: 600px;
-    display: none;
+.resizable-box#box2 {
+    position: absolute;
+    top: 700px;
+    left: 50px;
+    border: 2px solid #000;
+    padding: 10px;
+    background-color: #fff;
 }
 
 .resizable-box-header {
     background-color: #ddd;
     padding: 5px;
     cursor: move;
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
 }
 
 .fixed-box#box3 {
@@ -109,25 +79,21 @@ background-image: url("images/desktop.png");
     height: auto;
     border: 2px solid #000;
     overflow: hidden;
-    display: none;
+}
+
+.fixed-box img {
+    width: 100%;
+    height: 100%;
 }
 
 .fixed-box#box4 {
     position: absolute;
     top: 500px; 
     left: 500px; 
-    width: auto;  /* Allow the width to adjust based on the image */
-    max-width: 300px;  /* Set a maximum width if needed */
-    height: auto;  /* Allow the height to adjust based on the image */
+    width: 300px; 
+    height: auto;
     border: 2px solid #000;
     overflow: hidden;
-    display: none;
-}
-
-.fixed-box img {
-    width: 100%;
-    height: auto;
-    vertical-align: top; /* Align the image to the top of the container */
 }
 
 .fixed-box-header {
@@ -136,25 +102,47 @@ background-image: url("images/desktop.png");
     cursor: move;
 }
 
+.close-button:hover,
+.open-button:hover {
+    color: #333;
+}
+
+.resizable-box p {
+    margin: 0;
+}
+
+.box4-open {
+    position: absolute;
+    top: 250px;
+    left: 1565px;
+    cursor: pointer;
+    width: 50px;
+    height: 30px;
+}
 
 
 .fixed-box#box5 {
     position: absolute;
-    top: 700px;  /* Adjust the positioning as needed */
-    left: 200px; /* Adjust the positioning as needed */
-    width: auto;
-    max-width: 300px;
+    top: 50px; 
+    left: 850px; 
     height: auto;
     border: 2px solid #000;
     overflow: hidden;
-    display: none;
 }
 
-.fixed-box#box5 img {
-    width: 100%;
+.box5-open {
+    position: absolute;
+    top: 280px;
+    left: 1565px;
+    cursor: pointer;
+    width: 80px;
     height: auto;
-    vertical-align: top;
 }
+
+.box5-open img {
+    width: 100%;
+    height: 100%;
+}  
 
 area {
     cursor: pointer;
