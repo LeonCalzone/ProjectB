@@ -11,17 +11,16 @@
 </head>
 <body>
 
-    <span class="open-button notebox-open" onclick="toggleBox('notebox', true)">
-        <img src="images/noteicon.png" alt="Open notebox">
-        </span>
-                 <a href="index2.html">
+<a href="index2.html">
                     <img src="images/trashicon.png" alt="Button Image">
                 </a>
+  <span class="open-button notebox-open" onclick="toggleBox('notebox', true)">
+    <img src="images/noteicon.png" alt="Open notebox" onclick="stopPropagation(event)">
+</span>
 
-                <span class="open-button box-open" onclick="toggleBoxes(['box3', 'box4', 'box5'], true)">
-                    <img src="images/picicon.png" alt="Open photos">
-                </span>
-                
+<span class="open-button box-open" onclick="toggleBoxes(['box3', 'box4', 'box5'], true)">
+    <img src="images/picicon.png" alt="Open photos" onclick="stopPropagation(event)">
+</span>
     
                 <span class="open-button casefile-open" onclick="toggleBox('casefile', true)">
                     <img src="images/foldericon.png" alt="Open documents">
@@ -65,12 +64,14 @@
         </div>
     </div>
     
-     <div class="resizable-box" id="notebox" onmousedown="startDragging(event, 'notebox')">
+  <!--  <div class="resizable-box" id="notebox" onmousedown="startDragging(event, 'notebox')">
         <span class="close-button" onclick="toggleBox('notebox', false)">✖</span>
         <div class="resizable-box-header">NOTES</div>
         <div class="box-content">
-        <p> test 2 
-            <!--Jonathan Harker’s Virtual Journal
+            <p> test 2 </p>
+        </div>
+    </div>
+            Jonathan Harker’s Virtual Journal
             <br>
             <br>
             <p>Entry One
@@ -110,10 +111,10 @@
                 <br>1/31/97 09:06 PM
                 <br>
                 <br>
-                <p>END OF ENTRIES -->
+                <p>END OF ENTRIES
             
         </p>
-        </div> 
+        </div> -->
 
     <div class="fixed-box" id="box3" onmousedown="startDragging(event, 'box3')">
         <span class="close-button" onclick="toggleBox('box3', false)">✖</span>
