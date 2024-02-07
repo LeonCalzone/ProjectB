@@ -170,7 +170,7 @@ html, body {
     background-color: black; 
     overflow: hidden;
     border: 5px solid;
-    border-color: white grey grey white;
+    border-color: black;
 }
 .div11 img {
     max-width: 100%;
