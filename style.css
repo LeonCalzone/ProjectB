@@ -152,7 +152,7 @@ background-image: url("images/desktop.png");
 
 .resizable-box#intro {
     top: 200px;
-    left: 600px;
+    left: 400px;
     width: 700px;
     height: 600px;
     padding: 30px;
