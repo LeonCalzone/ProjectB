@@ -42,7 +42,7 @@ background-image: url("images/desktop.png");
     top: 20px;
     left: 30px;
     cursor: pointer;
-    width: 60px;
+    width: 80px;
     height: auto;
 }
 
@@ -152,7 +152,7 @@ background-image: url("images/desktop.png");
 
 .resizable-box#intro {
     top: 200px;
-    left: 200px;
+    left: 600px;
     width: 700px;
     height: 600px;
     padding: 30px;
