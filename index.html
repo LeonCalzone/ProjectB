@@ -10,12 +10,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div  class="open-button monster-open">
+    <a href="index2.html">
+        <img src="images/foldericon.png" alt="Button Image">
+    </a>
+</div>
 
-<a href="index2.html">
-                    <img src="images/trashicon.png" alt="Button Image">
-                </a>
   <span class="open-button notebox-open" onclick="toggleBox('notebox', true)">
     <img src="images/noteicon.png" alt="Open notebox" onclick="stopPropagation(event)">
+</span>
+<span class="open-button intro-open" onclick="toggleBox('intro', true)">
+    <img src="images/helpicon.png" alt="Intro" onclick="stopPropagation(event)">
 </span>
 
 <span class="open-button box-open" onclick="toggleBoxes(['box3', 'box4', 'box5'], true)">
@@ -23,8 +28,13 @@
 </span>
     
                 <span class="open-button casefile-open" onclick="toggleBox('casefile', true)">
-                    <img src="images/foldericon.png" alt="Open documents">
+                    <img src="images/lockfileicon.png" alt="Open documents">
                 </span>
+
+               <span class="open-button thank-open" onclick="toggleBox('thankyou', true)">
+                    <img src="images/compicon.png" alt="Computer">
+                </span>
+
 
     <div class="resizable-box" id="casefile" onmousedown="startDragging(event, 'casefile')">
         <span class="close-button" onclick="toggleBox('casefile', false)">✖</span>
@@ -64,14 +74,14 @@
         </div>
     </div>
     
-  <!--  <div class="resizable-box" id="notebox" onmousedown="startDragging(event, 'notebox')">
+    <div class="resizable-box" id="notebox" onmousedown="startDragging(event, 'notebox')">
         <span class="close-button" onclick="toggleBox('notebox', false)">✖</span>
         <div class="resizable-box-header">NOTES</div>
         <div class="box-content">
             <p> test 2 </p>
         </div>
     </div>
-            Jonathan Harker’s Virtual Journal
+            <!--Jonathan Harker’s Virtual Journal
             <br>
             <br>
             <p>Entry One
@@ -111,12 +121,30 @@
                 <br>1/31/97 09:06 PM
                 <br>
                 <br>
-                <p>END OF ENTRIES
-            
-        </p>
-        </div> -->
+                <p>END OF ENTRIES-->
+        
 
-    <div class="fixed-box" id="box3" onmousedown="startDragging(event, 'box3')">
+<div class="resizable-box" id="thankyou" onmousedown="startDragging(event, 'thankyou')">
+    <span class="close-button" onclick="toggleBox('thankyou', false)">✖</span>
+    <div class="resizable-box-header">CONSOLE</div>
+    <div class="box-content">
+        <p>
+text text
+        </p>
+    </div>
+</div>
+
+<div class="resizable-box" id="intro" onmousedown="startDragging(event, 'intro')">
+    <span class="close-button" onclick="toggleBox('intro', false)">✖</span>
+    <div class="resizable-box-header">OPEN</div>
+    <div class="box-content">
+        <p>
+text text efewbhfbw
+        </p>
+    </div>
+</div>
+
+      <div class="fixed-box" id="box3" onmousedown="startDragging(event, 'box3')">
         <span class="close-button" onclick="toggleBox('box3', false)">✖</span>
         <div class="fixed-box-header">Drag me</div>
         <img src="images/fullbody.png" alt="Box 3">
@@ -133,6 +161,8 @@
         <div class="fixed-box-header">Drag me</div>
         <img src="images/hand.jpg" alt="Box 5">
     </div>
+ 
+</body>
  
 </body>
 </html>

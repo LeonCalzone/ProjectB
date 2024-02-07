@@ -6,7 +6,7 @@ background-image: url("images/desktop.png");
     height: 100vh;
 }
 
-.box1-open {
+.box-open {
     position: absolute;
     top: 20px;
     left: 1565px;
@@ -15,16 +15,54 @@ background-image: url("images/desktop.png");
     height: auto;
 }
 
-.box1-open img {
+.box-open img {
     width: 100%;
     height: 100%;
 }
 
-#box1 img {
+.thank-open {
+    position: absolute;
+    top: 410px;
+    left: 1565px;
+    cursor: pointer;
     width: 80px;
-  }
+    height: auto;
+}
 
-.box2-open {
+.thank-open img {
+    width: 100%;
+    height: 100%;
+}
+
+.intro-open {
+    position: absolute;
+    top: 665px;
+    left: 1565px;
+    cursor: pointer;
+    width: 80px;
+    height: auto;
+}
+
+.intro-open img {
+    width: 100%;
+    height: 100%;
+}
+
+.monster-open {
+    position: absolute;
+    top: 540px;
+    left: 1565px;
+    cursor: pointer;
+    width: 80px;
+    height: auto;
+}
+
+.monster-open img {
+    width: 100%;
+    height: 100%;
+}
+
+.casefile-open {
     position: absolute;
     top: 150px;
     left: 1565px;
@@ -33,35 +71,23 @@ background-image: url("images/desktop.png");
     height: auto;
 }
 
-.box2-open img {
+.casefile-open img {
     width: 100%;
     height: 100%;
 }
 
-.resizable-box#box1 {
+.notebox-open {
     position: absolute;
-    top: 600px;
-    left: 50px;
-    border: 2px solid #000;
-    padding: 10px;
-    height:200px;
-    width: auto;
-    background-color: #fff;
+    top: 280px;
+    left: 1565px;
+    cursor: pointer;
+    width: 80px;
+    height: auto;
 }
 
-.resizable-box#box2 {
-    position: absolute;
-    top: 700px;
-    left: 50px;
-    border: 2px solid #000;
-    padding: 10px;
-    background-color: #fff;
-}
-
-.resizable-box-header {
-    background-color: #ddd;
-    padding: 5px;
-    cursor: move;
+.notebox-open img {
+    width: 100%;
+    height: 100%;
 }
 
 .close-button {
@@ -69,6 +95,50 @@ background-image: url("images/desktop.png");
     top: 5px;
     right: 5px;
     cursor: pointer;
+}
+
+ .resizable-box {
+    position: absolute;
+    border: 2px solid #000;
+    padding: 10px;
+    background-color: #fff;
+    overflow: auto; /* Set overflow property to handle text overflow */
+}
+
+.resizable-box#intro {
+    top: 200px;
+    left: 700px;
+    width: 500px;
+    height: 600px;
+    display: none;
+}
+.resizable-box#thankyou {
+    top: 300px;
+    left: 900px;
+    width: 500px;
+    height: 600px;
+    display: none;
+}
+.resizable-box#casefile {
+    top: 200px;
+    left: 400px;
+    width: 500px;
+    height: 600px;
+    display: none;
+}
+
+.resizable-box#notebox {
+    top: 200px;
+    left: 400px;
+    width: 500px;
+    height: 600px;
+    display: none;
+}
+
+.resizable-box-header {
+    background-color: #ddd;
+    padding: 5px;
+    cursor: move;
 }
 
 .fixed-box#box3 {
@@ -79,21 +149,25 @@ background-image: url("images/desktop.png");
     height: auto;
     border: 2px solid #000;
     overflow: hidden;
-}
-
-.fixed-box img {
-    width: 100%;
-    height: 100%;
+    display: none;
 }
 
 .fixed-box#box4 {
     position: absolute;
     top: 500px; 
     left: 500px; 
-    width: 300px; 
-    height: auto;
+    width: auto;  /* Allow the width to adjust based on the image */
+    max-width: 300px;  /* Set a maximum width if needed */
+    height: auto;  /* Allow the height to adjust based on the image */
     border: 2px solid #000;
     overflow: hidden;
+    display: none;
+}
+
+.fixed-box img {
+    width: 100%;
+    height: auto;
+    vertical-align: top; /* Align the image to the top of the container */
 }
 
 .fixed-box-header {
@@ -102,47 +176,23 @@ background-image: url("images/desktop.png");
     cursor: move;
 }
 
-.close-button:hover,
-.open-button:hover {
-    color: #333;
-}
-
-.resizable-box p {
-    margin: 0;
-}
-
-.box4-open {
-    position: absolute;
-    top: 250px;
-    left: 1565px;
-    cursor: pointer;
-    width: 50px;
-    height: 30px;
-}
-
-
 .fixed-box#box5 {
     position: absolute;
-    top: 50px; 
-    left: 850px; 
+    top: 700px;  /* Adjust the positioning as needed */
+    left: 200px; /* Adjust the positioning as needed */
+    width: auto;
+    max-width: 300px;
     height: auto;
     border: 2px solid #000;
     overflow: hidden;
+    display: none;
 }
 
-.box5-open {
-    position: absolute;
-    top: 280px;
-    left: 1565px;
-    cursor: pointer;
-    width: 80px;
-    height: auto;
-}
-
-.box5-open img {
+.fixed-box#box5 img {
     width: 100%;
-    height: 100%;
-}  
+    height: auto;
+    vertical-align: top;
+}
 
 area {
     cursor: pointer;
