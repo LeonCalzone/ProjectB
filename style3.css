@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'GoMono';
+    src: url('fonts/Go-Mono.ttf');
+}
+
+
 html, body {
     height: 100%;
     margin: 0;
@@ -18,18 +24,23 @@ html, body {
     grid-area: 1 / 1 / 6 / 4;
     background-color: black;
     overflow: hidden;
+    border: 5px solid;
+    border-color: darkred rgb(58, 2, 2) rgb(58, 2, 2) darkred;
 }
 .div1 img {
     width: 100%;
     height:auto;
     display: block;
     margin: auto;
+    
 }
 
 .div2 {
     grid-area: 6 / 1 / 11 / 4;
     background-color: black;
     overflow: hidden;
+    border: 5px solid;
+    border-color: darkred rgb(58, 2, 2) rgb(58, 2, 2) darkred;
 }
 .div2 img {
     width: 100%;
@@ -42,6 +53,8 @@ html, body {
     grid-area: 11 / 1 / 16 / 4;
     background-color: black;
     overflow: hidden;
+    border: 5px solid;
+    border-color: darkred rgb(58, 2, 2) rgb(58, 2, 2) darkred;
 }
 .div3 img {
     width: 100%;
@@ -54,6 +67,8 @@ html, body {
     grid-area: 16 / 1 / 21 / 4;
     background-color: black;
     overflow: hidden;
+    border: 5px solid;
+    border-color: darkred rgb(58, 2, 2) rgb(58, 2, 2) darkred;
 }
 .div4 img {
     width: 100%;
@@ -66,6 +81,8 @@ html, body {
     grid-area: 21 / 1 / 26 / 4;
     background-color: black;
     overflow: hidden;
+    border: 5px solid;
+    border-color: darkred rgb(58, 2, 2) rgb(58, 2, 2) darkred;
 }
 .div5 img {
     width: 100%;
@@ -78,6 +95,8 @@ html, body {
     grid-area: 26 / 1 / 31 / 4;
     background-color: black;
     overflow: hidden;
+    border: 5px solid;
+    border-color: darkred rgb(58, 2, 2) rgb(58, 2, 2) darkred;
 }
 .div6 img {
     width: 100%;
@@ -100,14 +119,16 @@ html, body {
 
 .div8 {
     grid-area: 26 / 4 / 31 / 15;
-    background-color: maroon;
     overflow: hidden;
+    border-top: 5px solid black;
 }
 .div8 img {
-    max-width: 100%;
+    
     max-height: 100%;
     display: block;
     margin: auto;
+    width: 725px;
+
 }
 
 .div9 {
@@ -116,6 +137,8 @@ html, body {
     overflow: hidden;
     background-image: url("images/smallbg.png");
     background-size: cover;
+    border: 5px solid;
+    border-color: darkred rgb(58, 2, 2) rgb(58, 2, 2) darkred;
 }
 .div9 img {
     max-width: 100%;
@@ -138,27 +161,36 @@ html, body {
     justify-content: end;
     align-self: end;
     justify-self: end;
+    border: 5px solid;
+    border-color: darkred rgb(58, 2, 2) rgb(58, 2, 2) darkred;
 }
 
 .div11 {
     grid-area: 1 / 15 / 5 / 31;
     background-color: black; 
     overflow: hidden;
+    border: 5px solid;
+    border-color: white grey grey white;
 }
 .div11 img {
     max-width: 100%;
     max-height: 100%;
     display: block;
     margin: auto;
+    
 }
 
 .div12 {
-    grid-area: 5 / 22 / 31 / 31;
-    background-color: ghostwhite; 
+    grid-area: 5 / 23 / 31 / 30;
+    background-color: lightgray; 
+    border: 5px solid;
+    border-color: white grey grey white;
     overflow: hidden;
     font-size: 15pt;
     padding: 20px;
     text-align: justify;
+    font-family: 'GoMono'; 
+    overflow: auto;
 
 }
 .div12 img {
@@ -167,4 +199,10 @@ html, body {
     display: block;
     margin: auto;
 }
+
+.div13
+ { grid-area: 5 / 22 / 31 / 23; } 
+
+.div14 
+{ grid-area: 5 / 30 / 31 / 31; } 
 

@@ -29,6 +29,20 @@ function toggleBox(boxId, show) {
     box.style.display = show ? 'block' : 'none';
 }
 
+function toggleBox(boxId, show) {
+    console.log(`Toggling ${boxId}, show: ${show}`);
+    const box = document.getElementById(boxId);
+    box.style.display = show ? 'block' : 'none';
+}
+
+function toggleBoxes(boxIds, show) {
+    console.log(`Toggling boxes: ${boxIds.join(', ')}, show: ${show}`);
+    boxIds.forEach((boxId) => {
+        toggleBox(boxId, show);
+    });
+}
+
+
 function startDragging(e, boxId) {
     e.preventDefault();
 

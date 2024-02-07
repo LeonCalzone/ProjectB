@@ -1,3 +1,27 @@
+@font-face {
+    font-family: 'GoMono';
+    src: url('fonts/Go-Mono.ttf');
+}
+
+@font-face {
+    font-family: 'GoMono';
+    src: url('fonts/Go-Mono-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'GoMono';
+    src: url('fonts/Go-Mono-Italic.ttf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GoMono';
+    src: url('fonts/Go-Mono-BoldItalic.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
 body {
     margin: 0;
     overflow: hidden; 
@@ -5,6 +29,13 @@ background-image: url("images/desktop.png");
     background-size: cover;
     height: 100vh;
 }
+
+.box-content { 
+    font-family: 'GoMono'; 
+    font-weight: normal; 
+    font-style: normal; 
+    
+ }
 
 .box-open {
     position: absolute;
@@ -22,7 +53,7 @@ background-image: url("images/desktop.png");
 
 .thank-open {
     position: absolute;
-    top: 410px;
+    top: 540px;
     left: 1565px;
     cursor: pointer;
     width: 80px;
@@ -50,7 +81,7 @@ background-image: url("images/desktop.png");
 
 .monster-open {
     position: absolute;
-    top: 540px;
+    top: 410px;
     left: 1565px;
     cursor: pointer;
     width: 80px;
@@ -99,46 +130,50 @@ background-image: url("images/desktop.png");
 
  .resizable-box {
     position: absolute;
-    border: 2px solid #000;
+    border: 5px solid;
+    border-color: white grey grey white;
     padding: 10px;
-    background-color: #fff;
+    background-color: lightgray;
     overflow: auto; /* Set overflow property to handle text overflow */
 }
 
 .resizable-box#intro {
     top: 200px;
-    left: 700px;
-    width: 500px;
+    left: 600px;
+    width: 700px;
     height: 600px;
-    display: none;
+    padding: 30px;
 }
 .resizable-box#thankyou {
-    top: 300px;
-    left: 900px;
-    width: 500px;
-    height: 600px;
+    top: 850px;
+    left: 30px;
+    width: 600px;
+    height: 200px;
     display: none;
 }
 .resizable-box#casefile {
-    top: 200px;
+    top: 145px;
     left: 400px;
     width: 500px;
     height: 600px;
     display: none;
+    
 }
 
 .resizable-box#notebox {
-    top: 200px;
-    left: 400px;
+    top: 100px;
+    left: 950px;
     width: 500px;
     height: 600px;
     display: none;
 }
 
 .resizable-box-header {
-    background-color: #ddd;
+    background-color: lightgrey;
     padding: 5px;
     cursor: move;
+    font-family: 'GoMono'; 
+    font-weight: bold;
 }
 
 .fixed-box#box3 {
@@ -147,7 +182,6 @@ background-image: url("images/desktop.png");
     left: 70px; 
     width: 700px; 
     height: auto;
-    border: 2px solid #000;
     overflow: hidden;
     display: none;
 }
@@ -156,10 +190,9 @@ background-image: url("images/desktop.png");
     position: absolute;
     top: 500px; 
     left: 500px; 
-    width: auto;  /* Allow the width to adjust based on the image */
-    max-width: 300px;  /* Set a maximum width if needed */
-    height: auto;  /* Allow the height to adjust based on the image */
-    border: 2px solid #000;
+    width: auto;  
+    max-width: 300px;  
+    height: auto; 
     overflow: hidden;
     display: none;
 }
@@ -167,23 +200,29 @@ background-image: url("images/desktop.png");
 .fixed-box img {
     width: 100%;
     height: auto;
-    vertical-align: top; /* Align the image to the top of the container */
+    vertical-align: top; 
+}
+
+.fixed-box{
+    border: 5px solid;
+    border-color: white grey grey white;
 }
 
 .fixed-box-header {
-    background-color: #ddd;
+    background-color: lightgray;
     padding: 5px;
     cursor: move;
+    font-family: 'GoMono'; 
+    font-weight: bold;
 }
 
 .fixed-box#box5 {
     position: absolute;
-    top: 700px;  /* Adjust the positioning as needed */
-    left: 200px; /* Adjust the positioning as needed */
+    top: 700px;  
+    left: 180px; 
     width: auto;
     max-width: 300px;
     height: auto;
-    border: 2px solid #000;
     overflow: hidden;
     display: none;
 }
